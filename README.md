@@ -4,7 +4,6 @@ Dažnai internete sutinkame vis naujas elektronines parduotuves su įvairiomis p
 Įrankiai:
 
 Puslapiui įgyvendinti naudojami įrankiai:
-React.js 
-ASP.NET Core. 
+React.js, ASP.NET Core, MySQL. 
 
 Šį pasirinkimą įtakojo tai, jog esame susipažinę su C# ir keblumų gali kelti tik JSX. Užbaigę projektą tikimės turėti veikiantį produktą – elektronikos prekių pardavimo platformą.
