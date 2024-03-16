@@ -363,3 +363,5 @@ MigrationBackup/
 FodyWeavers.xsd
 /BombasticElectronics/*.sln
 *.sln
+.vscode/tasks.json
+.vscode/launch.json
