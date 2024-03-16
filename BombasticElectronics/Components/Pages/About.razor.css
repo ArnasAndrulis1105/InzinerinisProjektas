@@ -1,0 +1,122 @@
+﻿/*Animations*/
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*Classes*/
+
+.about-txt {
+    animation: fadeIn 5s;
+}
+
+/* Four columns side by side */
+.team-column {
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    animation: fadeIn 5s;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .team-column {
+        width: 100%;
+        display: block;
+        animation: fadeIn 5s;
+    }
+}
+
+/* Some left and right padding inside the container */
+.team-container {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.team-container::after, .team-row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Add some shadows to create a card effect */
+.team-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/*Set color for title*/
+.team-title {
+    color: grey;
+}
+
+.team-image {
+    width:100%;
+}
+
+.team-button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.team-button:hover {
+    background-color: #555;
+}
