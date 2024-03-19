@@ -6,7 +6,8 @@
     </div>
 
     <main>
-        <div class="top-row px-4">
+        <div class="top-row px-4" style="display:flex; justify-content:center">
+            <DropDown catList="categories"></DropDown>
             <SearchBox items="temp"></SearchBox>
             <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
         </div>
@@ -26,4 +27,5 @@
 
 @code{
     List<string> temp = new List<string>();
+    List<string> categories = new List<string>{"Vienas", "Du", "Trys"};
 }
