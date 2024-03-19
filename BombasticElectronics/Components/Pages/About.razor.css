@@ -66,7 +66,7 @@
 }
 
 /* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1000px) {
     .team-column {
         width: 100%;
         display: block;
@@ -88,12 +88,17 @@
 
 /* Add some shadows to create a card effect */
 .team-card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transition: box-shadow 0.3s ease;
+    font-size: calc(0.55vw + 0.55vh);
 }
 
 .team-card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.team-name {
+    padding: 10px 0px 5px 0px;
 }
 
 /*Set color for title*/
@@ -102,7 +107,7 @@
 }
 
 .team-image {
-    width:100%;
+    width: 100%;
 }
 
 .team-button {
