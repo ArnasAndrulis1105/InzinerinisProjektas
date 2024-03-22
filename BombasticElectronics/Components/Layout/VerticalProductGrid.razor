@@ -1,0 +1,23 @@
+﻿<body>
+    <div class="container">
+        <div class="product-grid">
+            @foreach (Product product in products)
+            {
+                <div class="product" onclick="location.href='@String.Concat("products", "/", product.id.ToString())'">
+                    <img class="product-image" src="@product.image" />
+                    <div class="product-price-container">
+                        <p class="product-price">@product.price€</p>
+                    </div>
+                    <div class="product-name-container">
+                        <p class="product-name">@product.name</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</body>
+
+@code {
+    [Parameter]
+    public List<Product> products { get; set; }
+}

@@ -1,0 +1,18 @@
+﻿@page "/products/laptops"
+
+<h1>Laptops</h1>
+
+<VerticalProductGrid products="laptops"></VerticalProductGrid>
+
+@code {
+    static List<Category> categories = new List<Category>() {
+        new Category("Laptops", @"Images/Categories/Laptops.png"),
+    };
+    static List<Product> laptops = new List<Product>() {
+        new Product(1, "IED", @"Images/Categories/Laptops.png", categories.Find(x => x.name.Contains("Laptops")), 99.99m),
+        new Product(1, "IED", @"Images/Categories/Laptops.png", categories.Find(x => x.name.Contains("Laptops")), 99.99m),
+        new Product(1, "This product name is unusually long to test how does the site react to such changes", @"Images/Categories/Laptops.png", categories.Find(x => x.name.Contains("Laptops")), 99.99m),
+        new Product(1, "IED", @"Images/Categories/Laptops.png", categories.Find(x => x.name.Contains("Laptops")), 99.99m),
+        new Product(1, "IED", @"Images/Categories/Laptops.png", categories.Find(x => x.name.Contains("Laptops")), 99.99m),
+    };
+}
