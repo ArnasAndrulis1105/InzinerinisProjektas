@@ -1,10 +1,12 @@
 ﻿.container {
+    
     display: flex;
     width: 100%;
     margin: 0px 0px 0px 0px;
 }
 
 .product-grid {
+    
     display: grid;
     grid-gap: 16px;
     padding: 16px;
@@ -37,9 +39,10 @@
 }
 
 .product {
+    position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     cursor: pointer;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 10px 30px 10px;
 }
 
 .product:hover {
@@ -71,4 +74,18 @@
     flex: none;
     font-size: large;
     font-weight: bold;
+}
+
+.product-features-container {
+    display: inline-flex;
+}
+
+.product-features {
+    flex: none;
+    max-width: 250px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    list-style-position: inside;
 }

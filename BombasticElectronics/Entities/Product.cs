@@ -8,7 +8,7 @@
         public string image { get; set; }
         public Category category { get; set; }
         public decimal price { get; set; }
-        public string[,]? properties { get; set; }
+        public Tuple<string, string>[]? properties { get; set; }
 
         public Product(int id, string name, string image, Category category, decimal price)
         {
@@ -19,7 +19,7 @@
             this.price = price;
         }
 
-        public Product(int id, string name, string? description, string image, Category category, decimal price, string[,]? properties)
+        public Product(int id, string name, string image, Category category, decimal price, string? description, Tuple<string, string>[]? properties)
         {
             this.id = id;
             this.name = name;

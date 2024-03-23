@@ -4,7 +4,7 @@
         <div class="category-grid">
             @foreach (Category category in categories)
             {
-                <div class="category" onclick="location.href='@String.Concat(currentPath, "/", category.name.ToString().ToLower())'">
+                <div class="category" onclick="location.href='@String.Concat(currentPath.TrimEnd('/'), "/", category.name.ToString().ToLower())'"> <!--It's like this so you can have subcategories-->
                     <img class="category-image" src="@category.image" />
                     <div class="category-name-container">
                         <p class="category-name">@category.name</p>
