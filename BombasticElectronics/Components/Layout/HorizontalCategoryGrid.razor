@@ -18,9 +18,9 @@
 </body>
 
 @code {
-    [Parameter]
+    [Parameter, EditorRequired]
     public List<Category> categories { get; set; }
-    [Parameter]
+    [Parameter, EditorRequired]
     public string currentPath { get; set; }
 
 }
