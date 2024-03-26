@@ -1,0 +1,16 @@
+﻿<div class="dropdown">
+    <button class="btn btn-primary" style="margin-right:5px">Categories</button>
+    <div class="dropdown-content">
+        @foreach(var category in catList){
+            <a href="/ + @category">@category</a>
+        }
+        <a href="https://i.kym-cdn.com/entries/icons/facebook/000/047/815/sadcatcover.jpg">Link 1</a>
+        <a href="https://media.tenor.com/fm4u-L3RJjMAAAAe/cat-thousand-yard-stare-thousand-yard-stare.png">Link 2</a>
+        <a href="https://i.ytimg.com/vi/j1YEVm5M-YM/maxresdefault.jpg">Link 3</a>
+    </div>
+</div>
+
+@code{
+    [Parameter]
+    public List<string> catList {get; set;}
+}
