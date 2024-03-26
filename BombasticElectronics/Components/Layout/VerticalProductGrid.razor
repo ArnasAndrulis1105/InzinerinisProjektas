@@ -1,0 +1,39 @@
+﻿<body>
+    <div class="container">
+        <div class="product-grid">
+            @foreach (Product product in products)
+            {
+                <div class="product" onclick="location.href='@String.Concat("products", "/", product.id.ToString())'">
+                    <img class="product-image" src="@product.image" />
+                    <div class="product-price-container">
+                        <p class="product-price">@product.price€</p>
+                    </div>
+                    <div class="product-name-container">
+                        <p class="product-name">@product.name</p>
+                    </div>
+                    @if (product.properties is not null)
+                    {
+                        <div class="product-features-container">
+                            <ul>
+                        
+                                @for (int i = 0; i < product.properties.Length; i++)
+                                {
+                                    if(i >= 4)
+                                    {
+                                        break;
+                                    }
+                                    <li class="product-features"><strong>@product.properties[i].Item1</strong>: @product.properties[i].Item2</li>
+                                }
+                            </ul>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+</body>
+
+@code {
+    [Parameter, EditorRequired]
+    public List<Product> products { get; set; }
+}
