@@ -1,11 +1,11 @@
-﻿@page "/register"
+﻿@page "/register-as-seller"
 
 <div style="text-align:center">
     <div>
         <BombasticElectronics.Components.Layout.Logo />
     </div>
     <div style="border:1px solid; border-radius:10px; width:30%; height:auto; text-align:center; display:inline-block; padding:20px; box-shadow: 10px 5px 5px #3a0647">
-        <h1>Create an account</h1>
+        <h1>Create a business account</h1>
         <br />
         <div>
             <p style="text-align:left; margin-bottom:0px; font-weight:600">Full name</p>
@@ -13,6 +13,14 @@
         </div>
         <div>
             <p style="text-align:left; margin-bottom:0px; font-weight:600">Phone number of email</p>
+            <input class="form-control" />
+        </div>
+        <div>
+            <p style="text-align:left; margin-bottom:0px; font-weight:600">Legal Business Name</p>
+            <input class="form-control" />
+        </div>
+        <div>
+            <p style="text-align:left; margin-bottom:0px; font-weight:600">Business Address</p>
             <input class="form-control" />
         </div>
         <div>
@@ -29,18 +37,18 @@
                 <input type="checkbox" />
             </label>
         </div>
-        <div>
             <label class="container">
                 <p style="margin:0px">I agree to your <a href="https://i.pinimg.com/736x/23/7f/2e/237f2eb6c3a80802c451f92f4db6917f.jpg">Terms and Conditions</a> <input type="checkbox" /> </p>
             </label>
+        <div>
+
         </div>
 
         <button class="btn btn-primary" style="width:100%; margin-top:10px; background:linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);">Continue</button>
         <hr class="round" />
-
     </div>
     <p style="margin-top:20px; margin-bottom:0px">Already have an account?</p>
-    <NavLink class="btn btn-primary" style="background:linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%)" href="login">
+    <NavLink class="btn btn-primary" style="background:linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%)" href="login-as-seller">
         Login!
     </NavLink>
 </div>
